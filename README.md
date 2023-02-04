@@ -4,3 +4,6 @@
 #define APPLICATION_ADDRESS   (uint32_t)0x08010000<br>
 ### 接收1字节的函数<br>
 uint32_t SerialKeyPressed(uint8_t *key)
+### 设置擦除扇区
+pEraseInit.Sector=FLASH_SECTOR_4;
+pEraseInit.NbSectors=4;
