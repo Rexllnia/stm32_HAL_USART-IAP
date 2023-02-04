@@ -181,7 +181,7 @@ void Main_Menu(void)
     }
     else if (key == 0x33) /* execute the new program */
     {
-			IAP_ExecuteApp (0x8010000);
+			IAP_ExecuteApp (APPLICATION_ADDRESS);
 //      JumpAddress = *(__IO uint32_t*) (APPLICATION_ADDRESS + 4);
 //      /* Jump to user application */
 //      Jump_To_Application = (pFunction) JumpAddress;
